@@ -57,16 +57,58 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
-                        <h1 class="text-center mg-md sm-shadow creativity-hero-heading">Unleash your Creativity</h1>
+                    <div class="col-sm-12 col-lg-6 col-md-4">
+                        <h1 class="text-center mg-md sm-shadow creativity-hero-heading">Unleash your Coding Skills</h1>
                         <h3 class="text-center mg-lg sm-shadow animDelay02 tc-white">Wake up right now and reach your potential</h3>
                         <div class="text-center"><a href="portfolio.html" class="btn btn-lg btn-rd btn-d animDelay04 creativity-hero-button">View courses</a></div>
                     </div>
+     
+        <div class="col-sm-12 col-lg-6 col-md-4">
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
+
+            <h2>Get Started for Free</h2>
+
+            <hr />
+
+            <?php
+                if ( isset($errMSG) ) {
+                    echo $errMSG;               //php open and close?
+                }
+            ?>
+
+            <h3> Username </h3>
+    
+            <input type="email" name="email" class="form-control" placeholder="Your Email" value="<?php echo $email; ?>" maxlength="40" />
+
+            <span class="text-danger"><?php echo $emailError; ?></span>
+
+            <h3> Password </h3>
+
+            <input type="password" name="pass" class="form-control" placeholder="Your Password" maxlength="15" />
+            
+            <span class="text-danger"><?php echo $passError; ?></span>
+
+            <hr />
+
+            <button class="btn btn-block btn-warning" type="submit" name="btn-login">Start coding now</button>
+
+            <hr />
+
+            <a href="register.php">Register here</a>
+
+            </form>
+            </div>
+        </div>
+         
+    </div>
+
+                    </div>
+
                 </div>
             </div>
             <div class="container fill-bloc-bottom-edge">
                 <div class="row">
-                    <div class="col-sm-12"><a id="scroll-hero" class="blocs-hero-btn-dwn" href="#"><span class="fa fa-chevron-down creativity-arrow-down"></span></a></div>
+                    <div class="col-sm-12 col-lg-6"><a id="scroll-hero" class="blocs-hero-btn-dwn" href="#"><span class="fa fa-chevron-down creativity-arrow-down"></span></a></div>
                 </div>
             </div>
         </div>
