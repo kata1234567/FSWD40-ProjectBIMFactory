@@ -4,7 +4,7 @@
 	require_once 'dbconnect.php';
 	// it will never let you open index(login) page if session is set
 	if ( isset($_SESSION['user'])!="" ) {
-		header("Location: home.php");
+		header("Location: userhome.php");
 		exit;
 	}
 	$error = false;
@@ -14,9 +14,9 @@
 		$email = strip_tags($email);
 		$email = htmlspecialchars($email);
 
-		$pass = trim($_POST['pass']);
-		$pass = strip_tags($pass);
-		$pass = htmlspecialchars($pass);
+		$password = trim($_POST['password']);
+		$password = strip_tags($password);
+		$password = htmlspecialchars($password);
 		// prevent sql injections / clear user invalid inputs
 		if(empty($email)){
 			$error = true;
@@ -25,21 +25,21 @@
 			$error = true;
 			$emailError = "Please enter valid email address.";
 		}
-		if(empty($pass)){
+		if(empty($password)){
 			$error = true;
 			$passError = "Please enter your password.";
 		}
 		// if there's no error, continue to login
 		if (!$error) {
-			$password = hash('sha256', $pass); // password hashing using SHA256
-			$res=mysqli_query($conn, "SELECT userId, userName, userPass, userType FROM users WHERE userEmail='$email'");
+			$passwordd = hash('sha256', $password); // password hashing using SHA256
+			$res=mysqli_query($conn, "SELECT name, password, type FROM user WHERE email='$email'");
 			$row=mysqli_fetch_array($res, MYSQLI_ASSOC);
 			$count = mysqli_num_rows($res); // if username/password correct it returns must be 1 row
 			//compare the inserted data with database
-			if( $count == 1 && $row['userPass']==$password ) {
-				$_SESSION['user'] = $row['userId'];
-				$_SESSION['userType'] = $row['userType'];
-				header("Location: home.php");
+			if( $count == 1 && $row['password']==$passwordd ) {
+				$_SESSION['user'] = $row['name'];
+				$_SESSION['type'] = $row['type'];
+				header("Location: userhome.php");
 			} else {
 				$errMSG = "Incorrect Credentials, Try again...";
 			}
@@ -100,7 +100,7 @@
                             <li><a href="about.html" class="creativity-navigation">About</a></li>
                             <li><a href="team.html" class="creativity-navigation">Team</a></li>
                             <li><a href="contact.html" class="creativity-navigation">Contact</a></li>
-                            <li><a class="btn  btn-d  btn-sm creativity-quote" href="http://blocstemplates.com" id="pl-undefined" target="_blank">Newsletter</a></li>
+                            <li><a class="btn  btn-d  btn-sm creativity-quote" href="contact.html" id="pl-undefined" target="_blank">Newsletter</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -220,17 +220,17 @@
                     <div class="col-sm-4">
                         <div class="text-center"><span class="et-icon-lightbulb icon-lg icon-round creativity-icon-home"></span></div>
                         <h3 class="text-center  mg-md fadeInUp creativity-yellow animated"><strong>Frontend</strong></h3>
-                        <p class="text-center fadeInUp animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                        <p class="text-center fadeInUp animated">Master the languages of the web: HTML, CSS, and JavaScript. This path will prepare you to build basic websites and then build interactive web apps.</p>
                     </div>
                     <div class="col-sm-4">
                         <div class="text-center"><span class="et-icon-clock icon-lg icon-round creativity-icon-home"></span></div>
                         <h3 class="mg-md text-center  fadeInUp animDelay02 creativity-yellow animated"><strong>Backend</strong></h3>
-                        <p class="text-center fadeInUp animDelay02 animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.&nbsp;</p>
+                        <p class="text-center fadeInUp animDelay02 animated">Learn SQL and Python and build the skills you need to analyze data. Great for anyone trying to use code to be more data-driven.&nbsp;</p>
                     </div>
                     <div class="col-sm-4">
                         <div class="text-center"><span class="et-icon-scope icon-lg icon-round creativity-icon-home"></span></div>
                         <h3 class="mg-md text-center  fadeInUp animDelay04 creativity-yellow animated"><strong>Computer Science</strong></h3>
-                        <p class="text-center fadeInUp animDelay04 animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.&nbsp;</p>
+                        <p class="text-center fadeInUp animDelay04 animated">Learn Python fundamentals, one of the hottest and fastest growing programming languages. This is a great introduction to the world of code.&nbsp;</p>
                     </div>
                 </div>
             </div>
@@ -254,8 +254,8 @@
                         <div class="col-sm-12">
                             <div class="text-center"><span class="et-icon-gears icon-xl icon-white creativity-yellow"></span></div>
                             <h1 class="mg-md text-center  tc-white fadeInUp creativity-yellow animated">Unique approach</h1>
-                            <p class="text-center mg-lg text-w-70  fadeInUp animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
-                            <div class="text-center"><a href="about.html" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-yellow-button animated">Learn more</a></div>
+                            <p class="text-center mg-lg text-w-70  fadeInUp animated">Join the 45 million people who have trusted CIA to learn to code</p>
+                            <div class="text-center"><a href="about.html" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-yellow-button animated">It´s time to start investing in yourself</a></div>
                         </div>
                     </div>
                 </div>
@@ -266,21 +266,6 @@
         <!-- ScrollToTop Button --><a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
         <!-- ScrollToTop Button END-->
         <!-- Footer - check-our-portofolio -->
-        <div class="bloc bgc-anti-flash-white tc-onyx" id="check-our-portofolio">
-            <div class="container bloc-lg">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="row voffset">
-                            <div class="col-sm-12">
-                                <h1 class="text-center mg-md tc-onyx fadeInUp animated">Check out our courses</h1>
-                                <h4 class="text-center text-w-50 mg-lg fadeInUp animDelay02 animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</h4>
-                                <div class="text-center"><a href="portfolio.html" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-black-button animated">View courses</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Footer - check-our-portofolio END -->
 
         <!-- Bloc Group -->
@@ -291,7 +276,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Contact us</h2>
-                            <h4 class="text-center mg-lg text-w-80 tc-dark-jungle-green fadeInUp animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
+                            <h4 class="text-center mg-lg text-w-80 tc-dark-jungle-green fadeInUp animated">Get in contact with us. We would love to hear from you.</h4>
                             <div class="text-center"><a href="contact.html" class="btn  btn-d  btn-lg btn-sq fadeInUp creativity-wire-button animated">Contact us</a></div>
                         </div>
                     </div>
@@ -303,8 +288,8 @@
                 <div class="container bloc-lg">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h2 class="mg-md text-center tc-onyx">Request a quote</h2>
-                            <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay04 tc-dark-jungle-green animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
+                            <h2 class="mg-md text-center tc-onyx">Sign in for Newsletter</h2>
+                            <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay04 tc-dark-jungle-green animated">We will inform you about our latest work and your opportunities within the world of coding.</h4>
                             <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Request</a></div>
                         </div>
                     </div>
@@ -317,7 +302,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Meet our team</h2>
-                            <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay08 tc-dark-jungle-green animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
+                            <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay08 tc-dark-jungle-green animated">We wanna know more about you. So it is only fair to introduce ourselfs to you.</h4>
                             <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Meet us</a></div>
                         </div>
                     </div>
@@ -347,115 +332,7 @@
         </div>
         <!-- Footer - counts END -->
 
-        <div class='bloc-group'>
-            <!-- bloc-10 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-202 d-bloc" id="bloc-10">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 1<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-10 END -->
-            <!-- bloc-11 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-206 d-bloc" id="bloc-11">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 2<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-11 END -->
-            <!-- bloc-12 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-2015 d-bloc" id="bloc-12">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 3<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-12 END -->
-        </div>
-        <!-- Bloc Group END -->
-        <!-- Bloc Group -->
-        <div class='bloc-group'>
-            <!-- bloc-13 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-2013 d-bloc" id="bloc-13">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 4<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-13 END -->
-            <!-- bloc-14 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-207 d-bloc" id="bloc-14">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 5<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-14 END -->
-            <!-- bloc-15 -->
-            <div class="bloc bgc-white bloc-tile-3 bg-Creativity-2014 d-bloc" id="bloc-15">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 6<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-15 END -->
-        </div>
-        <!-- Bloc Group END -->
-        <!-- Bloc Group -->
-        <div class='bloc-group'>
-            <!-- bloc-16 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-202 d-bloc" id="bloc-16">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 1<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-16 END -->
-            <!-- bloc-17 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-206 d-bloc" id="bloc-17">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 2<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-17 END -->
-            <!-- bloc-18 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-2015 d-bloc" id="bloc-18">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 3<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-18 END -->
-        </div>
+        
         <!-- Footer - bloc-46 -->
         <div class="bloc bgc-onyx d-bloc" id="bloc-46">
             <div class="container bloc-md">
@@ -487,7 +364,7 @@
                     </div>
                     <div class="col-sm-3">
                         <h4 class="mg-md tc-white creativity-yellow"><strong>About</strong></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                        <p>We are the leading coding institute located in Austria</p>
                     </div>
                 </div>
             </div>
