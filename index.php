@@ -134,13 +134,13 @@
 
             <h3> Password </h3>
 
-            <input type="password" name="pass" class="form-control" placeholder="Your Password" maxlength="15" />
+            <input type="password" name="password" class="form-control" placeholder="Your Password" maxlength="15" />
             
             <span class="text-danger"><?php echo $passError; ?></span>
 
             <hr />
 
-            <div class="text-left"><a href="home.html" type="submit" name="btn-login" class="btn btn-block btn-warning" style="color:">Start coding now</a></div>
+            <div class="text-left"><button href="userhome.php" type="submit" name="btn-login" class="btn btn-block btn-warning" style="color:">Start coding now</button></div>
 
             <hr />
 
