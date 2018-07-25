@@ -8,7 +8,7 @@ if( !isset($_SESSION['user']) ) {
  exit;
 }
 // select logged-in user detail
-$res=mysqli_query($conn, "SELECT * FROM user WHERE userId=".$_SESSION['user']);
+$res=mysqli_query($conn, "SELECT * FROM `user`");
 $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
 ?>
 

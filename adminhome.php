@@ -9,7 +9,7 @@ if( $_SESSION['admin'] ) {
  exit;
 }
 // select logged-in user detail
-$res=mysqli_query($conn, "SELECT * FROM user WHERE userId=".$_SESSION['user']);
+$res=mysqli_query($conn, "SELECT * FROM `user`");
 $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
 ?>
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-<title>Welcome - <?php echo $userRow['email']; ?></title>
+<title>Welcome - <?php echo $userRow['name']; ?></title>
 </head>
 <body>
 
@@ -30,7 +30,7 @@ $userRow=mysqli_fetch_array($res, MYSQLI_ASSOC);
 
 <!-- Image and text -->
 <nav class="navbar navbar-dark bg-dark">
-   <h5 style=" color: white;"> Hi' <?php echo $userRow['email']; ?> </h5>
+   <h5 style=" color: white;"> Hi' <?php echo $userRow['name']; ?> </h5>
   <a class="navbar-brand" href="logout.php?logout"> sign-out</a>
 </nav>
 
