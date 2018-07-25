@@ -99,16 +99,25 @@ $passwordd = hash('sha256', $password);
 
 <title>Login & Registration System</title>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/register.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body >
+  <div class="demo">
+<div class="logo">
+      <span class="border"></span>
+      <p>&nbsp;CIA </p>
+ </div>
 
+</div>
+  <div id="particles-js"></div>
+<div  class="container text-center ">
 
-<div class= "container">
    <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
 
-   <div class="text-center mb-4">
-        <h1 class="h3 mb-3 font-weight-normal">WELCOME TO THE BIG LIBRARY</h1>
-        <p>if you have an account, then please  <a href="index.php">Sign In</a></p>, if you don't have an account, then  please <code>Sign Up</code>
+   <div id="text" class="mb-4">
+       <h1>SIGN IN</h1>
+        <p>if you have an account, then please  <a href="index.php">Sign In</a></p>, if you don't have an account, then  please <a href="#"> Sign Up</a>
       </div>
   
       
@@ -117,7 +126,7 @@ $passwordd = hash('sha256', $password);
   if ( isset($errMSG) ) {
   
    ?>
-           <div class="alert alert-<?php echo $errTyp ?>">
+           <div  class="alert alert-<?php echo $errTyp ?>">
                         <?php echo $errMSG; ?>
        </div>
 
@@ -127,8 +136,9 @@ $passwordd = hash('sha256', $password);
           
       
           
+            <hr />
 
-            <input type="text" name="name" class="form-control" placeholder="Enter Name" maxlength="50" value="<?php echo $name ?>" />
+            <input  type="text" name="name" class="form-control" placeholder="Enter Name" maxlength="50" value="<?php echo $name ?>" />
       
                <span class="text-danger"><?php echo $nameError; ?></span>
                <br>
@@ -159,14 +169,20 @@ $passwordd = hash('sha256', $password);
             <hr />
 
           
-            <button type="submit" class="btn btn-block btn-primary" name="btn-signup">Sign Up</button>
-            <hr />
+            <button type="submit" class="btn btn-warning" name="btn-signup">Sign Up</button>
+          
           
             <!-- <a href="index.php">Sign in Here...</a> -->
     
   
    </form>
    </div>
+
+   
+
+
+   <script type="text/javascript" src="js/particles.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
 <?php ob_end_flush(); ?>
