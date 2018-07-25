@@ -39,7 +39,13 @@
             if( $count == 1 && $row['password']==$passwordd ) {
                 $_SESSION['user'] = $row['name'];
                 $_SESSION['type'] = $row['type'];
+
+            if($_SESSION['type']== 'admin'){
+                header("Location: adminhome.php");
+            }else{
                 header("Location: userhome.php");
+            }
+                
             } else {
                 $errMSG = "Incorrect Credentials, Try again...";
             }
