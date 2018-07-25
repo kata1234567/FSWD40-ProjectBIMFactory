@@ -20,6 +20,7 @@ echo '<head>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/blocs.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/logo.css">
     <title>CIA - Code Institute Austria</title>
 </head>';
 ?>
