@@ -4,8 +4,8 @@ session_start();
 require_once 'dbconnect.php';
 
 // if session is not set this will redirect to login page
-if( !isset($_SESSION['user']) ) {
- header("Location: userhome.php");
+if( !isset($_SESSION['admin']) ) {
+ header("Location: adminhome.php");
  exit;
 }
 // select logged-in user detail

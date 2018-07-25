@@ -1,55 +1,81 @@
 <?php
-	ob_start();
-	session_start();
-	require_once 'dbconnect.php';
-	// it will never let you open index(login) page if session is set
-	if ( isset($_SESSION['user'])!="" ) {
-		header("Location: userhome.php");
-		exit;
-	}
-	$error = false;
-	if( isset($_POST['btn-login']) ) {
-		// prevent sql injections/ clear user invalid inputs
-		$email = trim($_POST['email']);
-		$email = strip_tags($email);
-		$email = htmlspecialchars($email);
+    ob_start();
+    session_start();
+    require_once 'dbconnect.php';
+    // it will never let you open index(login) page if session is set
+    if ( isset($_SESSION['user'])!="" ) {
+        header("Location: userhome.php");
+        exit;
+    }
+    $error = false;
+    if( isset($_POST['btn-login']) ) {
+        // prevent sql injections/ clear user invalid inputs
+        $email = trim($_POST['email']);
+        $email = strip_tags($email);
+        $email = htmlspecialchars($email);
 
-		$password = trim($_POST['password']);
-		$password = strip_tags($password);
-		$password = htmlspecialchars($password);
-		// prevent sql injections / clear user invalid inputs
-		if(empty($email)){
-			$error = true;
-			$emailError = "Please enter your email address.";
-		} else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
-			$error = true;
-			$emailError = "Please enter valid email address.";
-		}
-		if(empty($password)){
-			$error = true;
-			$passError = "Please enter your password.";
-		}
-		// if there's no error, continue to login
-		if (!$error) {
-			$passwordd = hash('sha256', $password); // password hashing using SHA256
-			$res=mysqli_query($conn, "SELECT name, password, type FROM user WHERE email='$email'");
-			$row=mysqli_fetch_array($res, MYSQLI_ASSOC);
-			$count = mysqli_num_rows($res); // if username/password correct it returns must be 1 row
-			//compare the inserted data with database
-			if( $count == 1 && $row['password']==$passwordd ) {
-				$_SESSION['user'] = $row['name'];
-				$_SESSION['type'] = $row['type'];
-				header("Location: userhome.php");
-			} else {
-				$errMSG = "Incorrect Credentials, Try again...";
-			}
-		}
-	}
+        $password = trim($_POST['password']);
+        $password = strip_tags($password);
+        $password = htmlspecialchars($password);
+        // prevent sql injections / clear user invalid inputs
+        if(empty($email)){
+            $error = true;
+            $emailError = "Please enter your email address.";
+        } else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
+            $error = true;
+            $emailError = "Please enter valid email address.";
+        }
+        if(empty($password)){
+            $error = true;
+            $passError = "Please enter your password.";
+        }
+        // if there's no error, continue to login
+        if (!$error) {
+            $passwordd = hash('sha256', $password); // password hashing using SHA256
+            $res=mysqli_query($conn, "SELECT name, password, type FROM user WHERE email='$email'");
+            $row=mysqli_fetch_array($res, MYSQLI_ASSOC);
+            $count = mysqli_num_rows($res); // if username/password correct it returns must be 1 row
+            //compare the inserted data with database
+            if( $count == 1 && $row['password']==$passwordd ) {
+                $_SESSION['user'] = $row['name'];
+                $_SESSION['type'] = $row['type'];
+                header("Location: userhome.php");
+            } else {
+                $errMSG = "Incorrect Credentials, Try again...";
+            }
+        }
+        
+
+    }
 ?>
 <!doctype html>
 <html>
 
-<?php include 'head.php';?>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Creativity, web design, blocs, web, template">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/et-line.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oleo+Script&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Berkshire+Swash&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/blocs.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>CIA - Code Institute Austria</title>
+    <!-- Google Analytics -->
+    <!-- Google Analytics END -->
+</head>
 
 <body>
     <!-- Main container -->
@@ -57,14 +83,36 @@
         <!-- welcome -->
         <div class="bloc bloc-fill-screen b-parallax bloc-bg-texture texture-darken bgc-onyx bg-Creativity-207 d-bloc " id="welcome">
             <div class="container fill-bloc-top-edge sticky-nav">
-               <?php include 'nav.php';?>
+                <nav class="navbar row">
+                    <div class="logo navbar-header"><a class="navbar-brand creativity-logo" href="index.html"><span class="border"></span>
+            <p>CIA&nbsp;&nbsp;&nbsp;</p></a>
+                        <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-1">
+                        <ul class="site-navigation nav navbar-nav pull-right">
+                            <li>
+                                <div class="dropdown btn-dropdown"><a href="#" class="dropdown-toggle creativity-navigation creativity-folder" data-toggle="dropdown" aria-expanded="true">Our Courses<span class="caret"></span></a>
+                                    <ul class="dropdown-menu creativity-dropdown-box" role="menu">
+                                        <li><a href="design.html" class="a-btn a-block creativity-navigation">Backend</a></li>
+                                        <li><a href="marketing.html" class="a-btn a-block creativity-navigation">Frontend</a></li>
+                                        <li><a href="branding.html" class="a-btn a-block creativity-navigation">New Technologies</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="about.html" class="creativity-navigation">About</a></li>
+                            <li><a href="team.html" class="creativity-navigation">Team</a></li>
+                            <li><a href="contact.html" class="creativity-navigation">Contact</a></li>
+                            <li><a class="btn  btn-d  btn-sm creativity-quote" href="contact.html" id="pl-undefined" target="_blank">Newsletter</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-lg-6 col-md-4">
                         <h1 class="text-center mg-md sm-shadow creativity-hero-heading">Unleash your Coding Skills</h1>
                         <h3 class="text-center mg-lg sm-shadow animDelay02 tc-white">Wake up right now and reach your potential</h3>
-                        <div class="text-center"><a href="portfolio.php" class="btn btn-lg btn-rd btn-d animDelay04 creativity-hero-button">View courses</a></div>
+                        <div class="text-center"><a href="portfolio.html" class="btn btn-lg btn-rd btn-d animDelay04 creativity-hero-button">View courses</a></div>
                     </div>
      
         <div class="col-sm-12 col-lg-6 col-md-4">
@@ -88,13 +136,13 @@
 
             <h3> Password </h3>
 
-            <input type="password" name="pass" class="form-control" placeholder="Your Password" maxlength="15" />
+            <input type="password" name="password" class="form-control" placeholder="Your Password" maxlength="15" />
             
             <span class="text-danger"><?php echo $passError; ?></span>
 
             <hr />
 
-            <div class="text-left"><a href="userhome.php" type="submit" name="btn-login" class="btn btn-block btn-warning" style="color:">Start coding now</a></div>
+            <div class="text-left"><button href="userhome.php" type="submit" name="btn-login" class="btn btn-block btn-warning" style="color:">Start coding now</button></div>
 
             <hr />
 
@@ -154,7 +202,7 @@
                     <div class="col-sm-10">
                         <h3 class="mg-md tc-white creativity-blocs-mobile-signup-text">Want to get started right away?</h3></div>
                     <div class="col-sm-2">
-                        <div class="text-center"><a href="register.php" class="btn  btn-d  btn-lg btn-sq creativity-yellow-button" target="_blank">Register now</a></div>
+                        <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq creativity-yellow-button" target="_blank">Register now</a></div>
                     </div>
                 </div>
             </div>
@@ -209,7 +257,7 @@
                             <div class="text-center"><span class="et-icon-gears icon-xl icon-white creativity-yellow"></span></div>
                             <h1 class="mg-md text-center  tc-white fadeInUp creativity-yellow animated">Unique approach</h1>
                             <p class="text-center mg-lg text-w-70  fadeInUp animated">Join the 45 million people who have trusted CIA to learn to code</p>
-                            <div class="text-center"><a href="about.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-yellow-button animated">It´s time to start investing in yourself</a></div>
+                            <div class="text-center"><a href="about.html" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-yellow-button animated">It´s time to start investing in yourself</a></div>
                         </div>
                     </div>
                 </div>
@@ -231,7 +279,7 @@
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Contact us</h2>
                             <h4 class="text-center mg-lg text-w-80 tc-dark-jungle-green fadeInUp animated">Get in contact with us. We would love to hear from you.</h4>
-                            <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp creativity-wire-button animated">Contact us</a></div>
+                            <div class="text-center"><a href="contact.html" class="btn  btn-d  btn-lg btn-sq fadeInUp creativity-wire-button animated">Contact us</a></div>
                         </div>
                     </div>
                 </div>
@@ -266,9 +314,63 @@
         </div>
         <!-- Bloc Group END -->
         <!-- Footer - counts -->
+        <div class="bloc b-parallax tc-white bloc-bg-texture texture-darken-strong bg-Creativity-201 bgc-white" id="counts">
+            <div class="container bloc-lg">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h2 class="mg-md text-center  fadeInUp tc-white creativity-yellow animated"><strong>28,288</strong></h2>
+                        <h4 class="text-center fadeInUp animated">Lines of code</h4></div>
+                    <div class="col-sm-3">
+                        <h2 class="mg-md text-center  fadeInUp animDelay02 tc-white creativity-yellow animated"><strong>152</strong></h2>
+                        <h4 class="text-center fadeInUp animDelay02 animated">Finished projects</h4></div>
+                    <div class="col-sm-3">
+                        <h2 class="mg-md text-center  fadeInUp animDelay04 tc-white creativity-yellow animated"><strong>1,023</strong></h2>
+                        <h4 class="text-center fadeInUp animDelay04 animated">Cups of coffee</h4></div>
+                    <div class="col-sm-3">
+                        <h2 class="mg-md text-center  fadeInUp animDelay06 tc-white creativity-yellow animated"><strong>Countless</strong></h2>
+                        <h4 class="text-center fadeInUp animDelay06 animated">Sleepless nights</h4></div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer - counts END -->
+
+        
+        <!-- Footer - bloc-46 -->
+        <div class="bloc bgc-onyx d-bloc" id="bloc-46">
+            <div class="container bloc-md">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row creativity-center">
+                            <div class="col-sm-12"><a href="http://facebook.com/gezalovef" class="btn btn-d btn-lg creativity-social-button" target="_blank"><span class="special-tag-for-editing-text-with-html"></span><span class="fa fa-facebook-official creativity-social-icon"></span></a><a href="http://instagram.com/eldar.gezalov" class="btn btn-d btn-lg creativity-social-button" target="_blank"><span class="fa fa-instagram creativity-social-icon"></span></a><a href="http://twitter.com/eldargezalov" class="btn btn-d btn-lg creativity-social-button" target="_blank"><span class="fa fa-twitter-square creativity-social-icon"></span></a><a href="http://blocstemplates.com" class="btn btn-d btn-lg creativity-social-button" target="_blank"><span class="fa fa-google-plus-square creativity-social-icon"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Footer - bloc-46 END -->
         <!-- Footer - footer -->
-        <?php include 'footer.php';?>
+        <div class="bloc tc-white bgc-onyx-2 d-bloc" id="footer">
+            <div class="container bloc-md">
+                <div class="row voffset">
+                    <div class="col-sm-3">
+                        <h1 class="mg-md creativity-logo">CIA<br></h1></div>
+                    <div class="col-sm-3">
+                        <h4 class="mg-md tc-white creativity-yellow"><strong>Contact</strong></h4>
+                        <p>Tel. +123 1234 1234
+                            <br> cia@codeinstituteaustria.at</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4 class="mg-md tc-white creativity-yellow"><strong>Location</strong></h4>
+                        <p>28 Blocs Street, Los Angeles,
+                            <br>CA, 12345, USA</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4 class="mg-md tc-white creativity-yellow"><strong>About</strong></h4>
+                        <p>We are the leading coding institute located in Austria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Footer - footer END -->
     </div>
     <!-- Main container END -->
