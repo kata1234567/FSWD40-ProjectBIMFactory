@@ -7,7 +7,7 @@ echo '<nav class="navbar row">
                     <div class="collapse navbar-collapse navbar-1">
                         <ul class="site-navigation nav navbar-nav pull-right">
                 
-                            <li><a href="portfolio.php" class="creativity-navigation">Course</a></li>
+                            <li><a href="portfolio.php" class="creativity-navigation">Courses</a></li>
                             <li><a href="about.php" class="creativity-navigation">About</a></li>
                             <li><a href="team.php" class="creativity-navigation">Team</a></li>
                             <li><a href="contact.php" class="creativity-navigation">Contact</a></li>
