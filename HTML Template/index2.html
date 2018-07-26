@@ -1,0 +1,470 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Creativity, web design, blocs, web, template">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/ionicons.min.css">
+    <link rel="stylesheet" href="./css/et-line.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oleo+Script&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Berkshire+Swash&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/blocs.min.js"></script>
+    <title>CIA - Code Institute Austria</title>
+    <!-- Google Analytics -->
+    <!-- Google Analytics END -->
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="page-container">
+        <!-- welcome -->
+        <div class="bloc bloc-fill-screen b-parallax bloc-bg-texture texture-darken bgc-onyx bg-Creativity-207 d-bloc " id="welcome">
+            <div class="container fill-bloc-top-edge sticky-nav">
+                <nav class="navbar row">
+                    <div class="navbar-header"><a class="navbar-brand creativity-logo" href="index.html">CIA</a>
+                        <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    </div>
+                    <div class="collapse navbar-collapse navbar-1">
+                        <ul class="site-navigation nav navbar-nav pull-right">
+                            <li><a href="portfolio.html" class="creativity-navigation">Our Courses</a></li>
+                            <li>
+                                <div class="dropdown btn-dropdown"><a href="#" class="dropdown-toggle creativity-navigation creativity-folder" data-toggle="dropdown" aria-expanded="true">Topics<span class="caret"></span></a>
+                                    <ul class="dropdown-menu creativity-dropdown-box" role="menu">
+                                        <li><a href="design.html" class="a-btn a-block creativity-navigation">Backend</a></li>
+                                        <li><a href="marketing.html" class="a-btn a-block creativity-navigation">Frontend</a></li>
+                                        <li><a href="branding.html" class="a-btn a-block creativity-navigation">New Technologies</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="about.html" class="creativity-navigation">About</a></li>
+                            <li><a href="team.html" class="creativity-navigation">Team</a></li>
+                            <li><a href="contact.html" class="creativity-navigation">Contact</a></li>
+                            <li><a class="btn  btn-d  btn-sm creativity-quote" href="http://blocstemplates.com" id="pl-undefined" target="_blank">Quote</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 col-md-4">
+                        <h1 class="text-center mg-md sm-shadow creativity-hero-heading">Unleash your Coding Skills</h1>
+                        <h3 class="text-center mg-lg sm-shadow animDelay02 tc-white">Wake up right now and reach your potential</h3>
+                        <div class="text-center"><a href="portfolio.html" class="btn btn-lg btn-rd btn-d animDelay04 creativity-hero-button">View courses</a></div>
+                    </div>
+     
+        <div class="col-sm-12 col-lg-6 col-md-4">
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
+
+            <h2>Get Started for Free</h2>
+
+            <hr />
+
+            <?php
+                if ( isset($errMSG) ) {
+                    echo $errMSG;               //php open and close?
+                }
+            ?>
+
+            <h3> Username </h3>
+    
+            <input type="email" name="email" class="form-control" placeholder="Your Email" value="<?php echo $email; ?>" maxlength="40" />
+
+            <span class="text-danger"><?php echo $emailError; ?></span>
+
+            <h3> Password </h3>
+
+            <input type="password" name="pass" class="form-control" placeholder="Your Password" maxlength="15" />
+            
+            <span class="text-danger"><?php echo $passError; ?></span>
+
+            <hr />
+
+            <button class="btn btn-block btn-warning" type="submit" name="btn-login">Start coding now</button>
+
+            <hr />
+
+            <a href="register.php">Register here</a>
+
+            </form>
+            </div>
+        </div>
+         
+    </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="container fill-bloc-bottom-edge">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6"><a id="scroll-hero" class="blocs-hero-btn-dwn" href="#"><span class="fa fa-chevron-down creativity-arrow-down"></span></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- welcome END -->
+        <!-- bring-dreams -->
+        <div class="bloc tc-dark-jungle-green bgc-white" id="bring-dreams">
+            <div class="container bloc-xl">
+                <div class="row voffset">
+                    <div class="col-sm-12">
+                        <h1 class="mg-lg  text-center fadeInUp tc-dark-jungle-green animated">Bring your ideas to life</h1>
+                        <h3 class="mg-lg text-w-70 text-center tc-dark-jungle-green fadeInUp animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</h3>
+                        <div class="text-center"><span class="ion ion-flash icon-md fadeInUp animDelay02 creativity-yellow animated"></span></div>
+                    </div>
+                </div>
+                <div class="row voffset-lg">
+                    <div class="col-sm-4">
+                        <h4 class="mg-md  text-center fadeInUp tc-dark-jungle-green animated">Intelligence</h4>
+                        <h3 class="mg-md text-center fadeInUp tc-onyx creativity-yellow animated"><strong>Smart design</strong></h3>
+                        <p class=" text-center fadeInUp animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4 class="mg-md  text-center fadeInUp animDelay02 tc-dark-jungle-green animated">Customization</h4>
+                        <h3 class="mg-md text-center fadeInUp animDelay02 tc-onyx creativity-yellow animated"><strong>Unique feel</strong></h3>
+                        <p class=" text-center fadeInUp animDelay02 animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4 class="mg-md  text-center tc-dark-jungle-green fadeInUp animDelay04 animated">Fashion</h4>
+                        <h3 class="mg-md text-center fadeInUp animDelay04 tc-onyx creativity-yellow animated"><strong>Amazing style</strong></h3>
+                        <p class=" text-center fadeInUp animDelay04 animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bring-dreams END -->
+        <!-- start-right-away -->
+        <div class="bloc bgc-dark-jungle-green d-bloc" id="start-right-away">
+            <div class="container bloc-lg">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <h3 class="mg-md tc-white creativity-blocs-mobile-signup-text">Want to get started right away?</h3></div>
+                    <div class="col-sm-2">
+                        <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq creativity-yellow-button" target="_blank">Request a quote</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- start-right-away END -->
+        <!-- Bloc Group -->
+        <div class='bloc-group'>
+            <!-- amazing-quality -->
+            <div class="bloc bloc-tile-2 tc-white bgc-onyx" id="amazing-quality">
+                <div class="container bloc-lg">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center"><span class="et-icon-genius icon-xl creativity-yellow"></span></div>
+                            <h1 class="mg-md text-center  tc-white fadeInUp creativity-yellow animated">Amazing quality</h1>
+                            <p class="text-center mg-lg text-w-70  fadeInUp animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                            <div class="text-center"><a href="about.html" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-yellow-button animated">Learn more</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- amazing-quality END -->
+            <!-- bloc-5 -->
+            <div class="bloc bloc-tile-2 bgc-white b-parallax bg-Creativity-206 d-bloc" id="bloc-5">
+                <div class="container bloc-lg">
+                    <div class="row">
+                        <div class="col-sm-12"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- bloc-5 END -->
+        </div>
+        <!-- Bloc Group END -->
+        <!-- three-principles -->
+        <div class="bloc tc-dark-jungle-green bgc-white" id="three-principles">
+            <div class="container bloc-xxl">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="text-center"><span class="et-icon-lightbulb icon-lg icon-round creativity-icon-home"></span></div>
+                        <h3 class="text-center  mg-md fadeInUp creativity-yellow animated"><strong>Smart design</strong></h3>
+                        <p class="text-center fadeInUp animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-center"><span class="et-icon-clock icon-lg icon-round creativity-icon-home"></span></div>
+                        <h3 class="mg-md text-center  fadeInUp animDelay02 creativity-yellow animated"><strong>Modern design</strong></h3>
+                        <p class="text-center fadeInUp animDelay02 animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.&nbsp;</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-center"><span class="et-icon-scope icon-lg icon-round creativity-icon-home"></span></div>
+                        <h3 class="mg-md text-center  fadeInUp animDelay04 creativity-yellow animated"><strong>Effective design</strong></h3>
+                        <p class="text-center fadeInUp animDelay04 animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- three-principles END -->
+        <!-- Bloc Group -->
+        <div class='bloc-group'>
+            <!-- bloc-7 -->
+            <div class="bloc bloc-tile-2 b-parallax bgc-white bg-Creativity-202 d-bloc" id="bloc-7">
+                <div class="container bloc-lg">
+                    <div class="row">
+                        <div class="col-sm-12"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- bloc-7 END -->
+            <!-- unique-approach -->
+            <div class="bloc bloc-tile-2 bgc-onyx d-bloc" id="unique-approach">
+                <div class="container bloc-lg">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center"><span class="et-icon-gears icon-xl icon-white creativity-yellow"></span></div>
+                            <h1 class="mg-md text-center  tc-white fadeInUp creativity-yellow animated">Unique approach</h1>
+                            <p class="text-center mg-lg text-w-70  fadeInUp animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                            <div class="text-center"><a href="about.html" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-yellow-button animated">Learn more</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- unique-approach END -->
+        </div>
+        <!-- Bloc Group END -->
+        <!-- ScrollToTop Button --><a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+        <!-- ScrollToTop Button END-->
+        <!-- Footer - check-our-portofolio -->
+        <div class="bloc bgc-anti-flash-white tc-onyx" id="check-our-portofolio">
+            <div class="container bloc-lg">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row voffset">
+                            <div class="col-sm-12">
+                                <h1 class="text-center mg-md tc-onyx fadeInUp animated">Check out our courses</h1>
+                                <h4 class="text-center text-w-50 mg-lg fadeInUp animDelay02 animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</h4>
+                                <div class="text-center"><a href="portfolio.html" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-black-button animated">View courses</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer - check-our-portofolio END -->
+
+        <!-- Bloc Group -->
+        <div class='bloc-group'>
+            <!-- Footer - bloc-42 -->
+            <div class="bloc bloc-tile-3 bgc-white l-bloc" id="bloc-42">
+                <div class="container bloc-lg">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="mg-md text-center tc-onyx">Contact us</h2>
+                            <h4 class="text-center mg-lg text-w-80 tc-dark-jungle-green fadeInUp animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
+                            <div class="text-center"><a href="contact.html" class="btn  btn-d  btn-lg btn-sq fadeInUp creativity-wire-button animated">Contact us</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer - bloc-42 END -->
+            <!-- Footer - bloc-43 -->
+            <div class="bloc bloc-tile-3 bgc-golden-yellow l-bloc" id="bloc-43">
+                <div class="container bloc-lg">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="mg-md text-center tc-onyx">Request a quote</h2>
+                            <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay04 tc-dark-jungle-green animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
+                            <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Request</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer - bloc-43 END -->
+            <!-- Footer - shortcuts -->
+            <div class="bloc bloc-tile-3 bgc-white l-bloc" id="shortcuts">
+                <div class="container bloc-lg">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h2 class="mg-md text-center tc-onyx">Meet our team</h2>
+                            <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay08 tc-dark-jungle-green animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
+                            <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Meet us</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer - shortcuts END -->
+        </div>
+        <!-- Bloc Group END -->
+        <!-- Footer - counts -->
+        <div class="bloc b-parallax tc-white bloc-bg-texture texture-darken-strong bg-Creativity-201 bgc-white" id="counts">
+            <div class="container bloc-lg">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h2 class="mg-md text-center  fadeInUp tc-white creativity-yellow animated"><strong>28,288</strong></h2>
+                        <h4 class="text-center fadeInUp animated">Lines of code</h4></div>
+                    <div class="col-sm-3">
+                        <h2 class="mg-md text-center  fadeInUp animDelay02 tc-white creativity-yellow animated"><strong>152</strong></h2>
+                        <h4 class="text-center fadeInUp animDelay02 animated">Finished projects</h4></div>
+                    <div class="col-sm-3">
+                        <h2 class="mg-md text-center  fadeInUp animDelay04 tc-white creativity-yellow animated"><strong>1,023</strong></h2>
+                        <h4 class="text-center fadeInUp animDelay04 animated">Cups of coffee</h4></div>
+                    <div class="col-sm-3">
+                        <h2 class="mg-md text-center  fadeInUp animDelay06 tc-white creativity-yellow animated"><strong>Countless</strong></h2>
+                        <h4 class="text-center fadeInUp animDelay06 animated">Sleepless nights</h4></div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer - counts END -->
+
+        <div class='bloc-group'>
+            <!-- bloc-10 -->
+            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-202 d-bloc" id="bloc-10">
+                <div class="container bloc-sm">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 1<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bloc-10 END -->
+            <!-- bloc-11 -->
+            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-206 d-bloc" id="bloc-11">
+                <div class="container bloc-sm">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 2<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bloc-11 END -->
+            <!-- bloc-12 -->
+            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-2015 d-bloc" id="bloc-12">
+                <div class="container bloc-sm">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 3<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bloc-12 END -->
+        </div>
+        <!-- Bloc Group END -->
+        <!-- Bloc Group -->
+        <div class='bloc-group'>
+            <!-- bloc-13 -->
+            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-2013 d-bloc" id="bloc-13">
+                <div class="container bloc-sm">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 4<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bloc-13 END -->
+            <!-- bloc-14 -->
+            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-207 d-bloc" id="bloc-14">
+                <div class="container bloc-sm">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 5<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bloc-14 END -->
+            <!-- bloc-15 -->
+            <div class="bloc bgc-white bloc-tile-3 bg-Creativity-2014 d-bloc" id="bloc-15">
+                <div class="container bloc-sm">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 6<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bloc-15 END -->
+        </div>
+        <!-- Bloc Group END -->
+        <!-- Bloc Group -->
+        <div class='bloc-group'>
+            <!-- bloc-16 -->
+            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-202 d-bloc" id="bloc-16">
+                <div class="container bloc-sm">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 1<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bloc-16 END -->
+            <!-- bloc-17 -->
+            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-206 d-bloc" id="bloc-17">
+                <div class="container bloc-sm">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 2<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bloc-17 END -->
+            <!-- bloc-18 -->
+            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-2015 d-bloc" id="bloc-18">
+                <div class="container bloc-sm">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 3<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bloc-18 END -->
+        </div>
+        <!-- Footer - bloc-46 -->
+        <div class="bloc bgc-onyx d-bloc" id="bloc-46">
+            <div class="container bloc-md">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row creativity-center">
+                            <div class="col-sm-12"><a href="http://facebook.com/gezalovef" class="btn btn-d btn-lg creativity-social-button" target="_blank"><span class="special-tag-for-editing-text-with-html"></span><span class="fa fa-facebook-official creativity-social-icon"></span></a><a href="http://instagram.com/eldar.gezalov" class="btn btn-d btn-lg creativity-social-button" target="_blank"><span class="fa fa-instagram creativity-social-icon"></span></a><a href="http://twitter.com/eldargezalov" class="btn btn-d btn-lg creativity-social-button" target="_blank"><span class="fa fa-twitter-square creativity-social-icon"></span></a><a href="http://blocstemplates.com" class="btn btn-d btn-lg creativity-social-button" target="_blank"><span class="fa fa-google-plus-square creativity-social-icon"></span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer - bloc-46 END -->
+        <!-- Footer - footer -->
+        <div class="bloc tc-white bgc-onyx-2 d-bloc" id="footer">
+            <div class="container bloc-md">
+                <div class="row voffset">
+                    <div class="col-sm-3">
+                        <h1 class="mg-md creativity-logo">CIA<br></h1></div>
+                    <div class="col-sm-3">
+                        <h4 class="mg-md tc-white creativity-yellow"><strong>Contact</strong></h4>
+                        <p>Tel. +123 1234 1234
+                            <br> cia@codeinstituteaustria.at</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4 class="mg-md tc-white creativity-yellow"><strong>Location</strong></h4>
+                        <p>28 Blocs Street, Los Angeles,
+                            <br>CA, 12345, USA</p>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4 class="mg-md tc-white creativity-yellow"><strong>About</strong></h4>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer - footer END -->
+    </div>
+    <!-- Main container END -->
+</body>
+
+</html>

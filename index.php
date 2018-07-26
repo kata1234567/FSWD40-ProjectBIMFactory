@@ -186,7 +186,7 @@
                     <div class="col-sm-10">
                         <h3 class="mg-md tc-white creativity-blocs-mobile-signup-text">Want to get started right away?</h3></div>
                     <div class="col-sm-2">
-                        <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq creativity-yellow-button" target="_blank">Register now</a></div>
+                        <div class="text-center"><a href="register.php" class="btn  btn-d  btn-lg btn-sq creativity-yellow-button" target="_blank">Register now</a></div>
                     </div>
                 </div>
             </div>
