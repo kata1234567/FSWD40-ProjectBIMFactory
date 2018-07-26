@@ -102,7 +102,7 @@
         <div class="col-sm-12 col-lg-6 col-md-4">
             <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
 
-            <h3 class=" mg-lg sm-shadow animDelay02 tc-white">Get Started for Free</h2>
+            <h3 class=" mg-lg sm-shadow animDelay02 tc-white">Get Started</h2>
 
             <hr />
 
@@ -241,7 +241,7 @@
                             <div class="text-center"><span class="et-icon-gears icon-xl icon-white creativity-yellow"></span></div>
                             <h1 class="mg-md text-center  tc-white fadeInUp creativity-yellow animated">Unique approach</h1>
                             <p class="text-center mg-lg text-w-70  fadeInUp animated">Join the 45 million people who have trusted CIA to learn to code</p>
-                            <div class="text-center"><a href="about.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-yellow-button animated">It´s time to start investing in yourself</a></div>
+                            <div class="text-center"><a href="register.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-yellow-button animated">It´s time to start investing in yourself</a></div>
                         </div>
                     </div>
                 </div>
@@ -275,8 +275,8 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Sign in for Newsletter</h2>
-                            <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay04 tc-dark-jungle-green animated">We will inform you about our latest work and your opportunities within the world of coding.</h4>
-                            <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Request</a></div>
+                            <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay04 tc-dark-jungle-green animated">We will inform you about our latest coding things</h4>
+                            <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Sign In</a></div>
                         </div>
                     </div>
                 </div>

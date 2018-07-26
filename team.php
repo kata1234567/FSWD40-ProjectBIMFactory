@@ -25,49 +25,31 @@
             <div class="container bloc-lg">
                 <div class="row voffset">
                     <div class="col-sm-12">
-                        <h1 class="text-center mg-md">Creativity Team</h1>
-                        <p class="text-center text-w-50 mg-lg ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <h1 class="text-center mg-md">Coding Team</h1>
+                        <p class="text-center text-w-50 mg-lg ">Hello. We are happy to create your webpages. We love coding of course.</p>
                         <div class="text-center"><span class="ion ion-flash icon-md"></span></div>
                     </div>
                 </div>
                 <div class="row voffset-lg">
-                    <div class="col-sm-4"><img src="img/Creativity%2011.jpeg" class="img-responsive mg-md center-block" />
-                        <h5>CEO</h5>
-                        <h4 class="mg-md "><strong>James Blocs</strong></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <div class="divider-h"><span class="divider"></span></div>
+                    <div class="col-sm-3 col-lg-3 col-md-6"><img src="img/Creativity%209.jpg" class="img-responsive mg-md center-block" />
+                        <p class=" mg-sm"><strong>Ahmad</strong></p>
+                        <h5>Fullstack Dev</h5>
                     </div>
-                    <div class="col-sm-4"><img src="img/Creativity%2011.jpeg" class="img-responsive mg-md center-block" />
-                        <h5>Leading Designer</h5>
-                        <h4 class="mg-md "><strong>Daniel Blocs</strong></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <div class="divider-h"><span class="divider"></span></div>
-                        <h3 class="mg-md  text-left"></h3>
+                    <div class="col-sm-3 col-lg-3 col-md-6"><img src="img/Creativity%2011.jpeg" class="img-responsive mg-md center-block" />
+                        <p class=" mg-sm"><strong>Saad</strong></p>
+                        <h5>Fullstack Dev</h5>
                     </div>
-                    <div class="col-sm-4"><img src="img/Creativity%2011.jpeg" class="img-responsive mg-md center-block" />
-                        <h5>Creative Designer</h5>
-                        <h4 class="mg-md "><strong>Michael Blocs</strong></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                        <div class="divider-h"><span class="divider"></span></div>
-                        <h3 class="mg-md  text-left"></h3>
+                    <div class="col-sm-3 col-lg-3 col-md-6"><img src="img/Creativity%209.jpg" class="img-responsive mg-md center-block" />
+                        <p class=" mg-sm"><strong>Hassan</strong></p>
+                        <h5>Fullstack Dev</h5>
                     </div>
-                </div>
-                <div class="row voffset-lg">
-                    <div class="col-sm-3"><img src="img/Creativity%209.jpg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Jeremy Blocs</strong></p>
-                        <h5>Job Description</h5>
+                    <div class="col-sm-3 col-lg-3 col-md-6"><img src="img/Creativity%2011.jpeg" class="img-responsive mg-md center-block" />
+                        <p class=" mg-sm"><strong>Maryam</strong></p>
+                        <h5>Fullstack Dev</h5>
                     </div>
-                    <div class="col-sm-3"><img src="img/Creativity%2011.jpeg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Alex Blocs</strong></p>
-                        <h5>Job Description</h5>
-                    </div>
-                    <div class="col-sm-3"><img src="img/Creativity%209.jpg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Roman Blocs</strong></p>
-                        <h5>Job Description</h5>
-                    </div>
-                    <div class="col-sm-3"><img src="img/Creativity%2011.jpeg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Victor Blocs</strong></p>
-                        <h5>Developer</h5>
+                    <div class="col-sm-3 col-lg-3 col-md-6"><img src="img/Creativity%2011.jpeg" class="img-responsive mg-md center-block" />
+                        <p class=" mg-sm"><strong>Kathrin</strong></p>
+                        <h5>Fullstack Dev</h5>
                     </div>
                 </div>
             
@@ -83,9 +65,9 @@
                     <div class="col-sm-12">
                         <div class="row voffset">
                             <div class="col-sm-12">
-                                <h1 class="text-center mg-md tc-onyx fadeInUp animated">Check out our portfolio</h1>
+                                <h1 class="text-center mg-md tc-onyx fadeInUp animated">Everybody can code</h1>
                                 <h4 class="text-center text-w-50 mg-lg fadeInUp animDelay02 animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</h4>
-                                <div class="text-center"><a href="portfolio.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-black-button animated">View portfolio</a></div>
+                                <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-black-button animated">Get in contact with us</a></div>
                             </div>
                         </div>
                     </div>
@@ -126,9 +108,9 @@
                 <div class="container bloc-lg">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h2 class="mg-md text-center tc-onyx">Join our team</h2>
+                            <h2 class="mg-md text-center tc-onyx">Meet us</h2>
                             <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay08 tc-dark-jungle-green animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
-                            <div class="text-center"><a href="team.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Join us</a></div>
+                            <div class="text-center"><a href="team.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Meet us</a></div>
                         </div>
                     </div>
                 </div>

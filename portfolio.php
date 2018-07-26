@@ -73,9 +73,9 @@
                     <div class="col-sm-12">
                         <div class="row voffset">
                             <div class="col-sm-12">
-                                <h1 class="text-center mg-md tc-onyx fadeInUp animated">Check out our portfolio</h1>
+                                <h1 class="text-center mg-md tc-onyx fadeInUp animated">Everybody can code</h1>
                                 <h4 class="text-center text-w-50 mg-lg fadeInUp animDelay02 animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</h4>
-                                <div class="text-center"><a href="portfolio.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-black-button animated">View portfolio</a></div>
+                                <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-black-button animated">Get in contact with us</a></div>
                             </div>
                         </div>
                     </div>

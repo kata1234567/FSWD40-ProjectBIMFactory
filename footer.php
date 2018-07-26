@@ -45,8 +45,8 @@ echo'  <div class="bloc b-parallax tc-white bloc-bg-texture texture-darken-stron
                     </div>
                     <div class="col-sm-3">
                         <h4 class="mg-md tc-white creativity-yellow"><strong>Location</strong></h4>
-                        <p>28 Blocs Street, Los Angeles,
-                            <br>CA, 12345, USA</p>
+                        <p>Kettenbrückengasse 14,
+                            <br>1040 Vienna</p>
                     </div>
                     <div class="col-sm-3">
                         <h4 class="mg-md tc-white creativity-yellow"><strong>About</strong></h4>
