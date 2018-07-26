@@ -34,7 +34,7 @@
                 <div class="container bloc-sm">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="text-center"><a href="portfolio.php" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Frontend<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                            <div class="text-center"><a href="register.php" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Frontend<span class="special-tag-for-editing-text-with-html"></span></a></div>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                 <div class="container bloc-sm">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="text-center"><a href="portfolio.php" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Backend<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                            <div class="text-center"><a href="register.php" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Backend<span class="special-tag-for-editing-text-with-html"></span></a></div>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                 <div class="container bloc-sm">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="text-center"><a href="portfolio.php" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">New Technologies<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                            <div class="text-center"><a href="register.php" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">New Technologies<span class="special-tag-for-editing-text-with-html"></span></a></div>
                         </div>
                     </div>
                 </div>

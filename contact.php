@@ -86,24 +86,20 @@
                     <div class="row voffset-md">
                         <div class="col-sm-2"></div>
                         <div class="col-sm-8">
-                            <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+                            <form id="form_1" action="form_1.php" method="post" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
                                 <div class="form-group">
                                     <label>Your name*</label>
-                                    <input id="name" class="form-control" required />
+                                    <input type="text" id="name" class="form-control" name="name" required />
                                 </div>
                                 <div class="form-group">
                                     <label>Your email*</label>
-                                    <input id="email" class="form-control" type="email" required />
-                                </div>
-                                <div class="form-group">
-                                    <label>Subject</label>
-                                    <input class="form-control" required id="input_1098" />
+                                    <input type="text" id="email" class="form-control" type="email" name="email" required />
                                 </div>
                                 <div class="form-group">
                                     <label>Message</label>
-                                    <textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+                                    <textarea id="message" class="form-control" rows="4" cols="50" name="message"required></textarea>
                                 </div>
-                                <button class="bloc-button btn btn-d btn-block btn-sq creativity-wire-button" type="submit">Submit</button>
+                                <input type="submit" class="bloc-button btn btn-d btn-block btn-sq creativity-wire-button" type="submit" name="submit" value="Submit"/>
                             </form>
                         </div>
                         <div class="col-sm-2">

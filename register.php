@@ -118,10 +118,15 @@ $passwordd = hash('sha256', $password);
 
    <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
 
-   <div id="text" class="mb-4">
-       <h1>REGISTRATION</h1>
+   
+    <div id="text" class="mb-4">
+       <div class="row">
+        <div class="col-sm-12"> 
+          <h1 id="regish">Go for it</h1>
         <p>if you have an account, then please  <a href="index.php">Sign In</a></p>, if you don't have an account, then  please <a href="#"> Register Now</a>
       </div>
+    </div>
+    </div>
   
       
     
@@ -172,7 +177,7 @@ $passwordd = hash('sha256', $password);
             <hr />
 
           
-            <button type="submit" class="btn btn-warning" name="btn-signup">Sign Up</button>
+            <button type="submit" class="btn btn-warning" name="btn-signup">Register Now</button>
           
           
             <!-- <a href="index.php">Sign in Here...</a> -->
