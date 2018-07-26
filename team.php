@@ -31,26 +31,26 @@
                     </div>
                 </div>
                 <div class="row voffset-lg">
-                    <div class="col-sm-3 col-lg-3 col-md-6"><img src="img/Creativity%209.jpg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Ahmad</strong></p>
-                        <h5>Fullstack Dev</h5>
+                    <div class="col-sm-3 col-lg-3 col-md-6"><img src="img/profile 1.jpg" class="img-responsive mg-md center-block" />
+                        <p class="mg-sm text-center"><strong>Ahmad</strong></p>
+                        <h5 class="text-center">Fullstack Dev</h5>
                     </div>
                     <div class="col-sm-3 col-lg-3 col-md-6"><img src="img/profile 2.jpg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Maryam</strong></p>
-                        <h5>Fullstack Dev</h5>
+                        <p class=" mg-sm text-center"><strong>Maryam</strong></p>
+                        <h5 class="text-center">Fullstack Dev</h5>
                     </div>
                     <div class="col-sm-3 col-lg-3 col-md-6"><img src="img/Creativity%2011.jpeg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Saad</strong></p>
-                        <h5>Fullstack Dev</h5>
+                        <p class=" mg-sm text-center"><strong>Saad</strong></p>
+                        <h5 class="text-center">Fullstack Dev</h5>
                     </div>
                     <div class="col-sm-3 col-lg-3 col-md-6"><img src="img/profile 4.jpg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Hassan</strong></p>
-                        <h5>Fullstack Dev</h5>
+                        <p class=" mg-sm text-center"><strong>Hassan</strong></p>
+                        <h5 class="text-center">Fullstack Dev</h5>
                     </div>
                     
                     <div class="col-sm-3 col-lg-3 col-md-6"><img src="img/profile 3.jpg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Kata</strong></p>
-                        <h5>Fullstack Dev</h5>
+                        <p class=" mg-sm text-center"><strong>Kata</strong></p>
+                        <h5 class="text-center">Fullstack Dev</h5>
                     </div>
                 </div>
             
