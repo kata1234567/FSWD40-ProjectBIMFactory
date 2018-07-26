@@ -114,7 +114,7 @@
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Sign In for Newsletter</h2>
                             <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay04 tc-dark-jungle-green animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
-                            <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Sign In now</a></div>
+                            <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Sign In now</a></div>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,7 @@
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Our Team</h2>
                             <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay08 tc-dark-jungle-green animated">We are experts.</h4>
-                            <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Meet us</a></div>
+                            <div class="text-center"><a href="team.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Meet us</a></div>
                         </div>
                     </div>
                 </div>

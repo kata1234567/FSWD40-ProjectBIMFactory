@@ -26,80 +26,7 @@
             </div>
         </div>
         <!-- bloc-9 END -->
-        <!-- Bloc Group -->
-        <div class='bloc-group'>
-            <!-- bloc-10 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-202 d-bloc" id="bloc-10">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 1<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-10 END -->
-            <!-- bloc-11 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-206 d-bloc" id="bloc-11">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 2<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-11 END -->
-            <!-- bloc-12 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-2015 d-bloc" id="bloc-12">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 3<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-12 END -->
-        </div>
-        <!-- Bloc Group END -->
-        <!-- Bloc Group -->
-        <div class='bloc-group'>
-            <!-- bloc-13 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-2013 d-bloc" id="bloc-13">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 4<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-13 END -->
-            <!-- bloc-14 -->
-            <div class="bloc bloc-tile-3 bgc-white bg-Creativity-207 d-bloc" id="bloc-14">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 5<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-14 END -->
-            <!-- bloc-15 -->
-            <div class="bloc bgc-white bloc-tile-3 bg-Creativity-2014 d-bloc" id="bloc-15">
-                <div class="container bloc-sm">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 6<span class="special-tag-for-editing-text-with-html"></span></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- bloc-15 END -->
-        </div>
-        <!-- Bloc Group END -->
+    
         <!-- Bloc Group -->
         <div class='bloc-group'>
             <!-- bloc-16 -->
@@ -107,7 +34,7 @@
                 <div class="container bloc-sm">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 1<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                            <div class="text-center"><a href="portfolio.php" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Frontend<span class="special-tag-for-editing-text-with-html"></span></a></div>
                         </div>
                     </div>
                 </div>
@@ -118,7 +45,7 @@
                 <div class="container bloc-sm">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 2<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                            <div class="text-center"><a href="portfolio.php" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Backend<span class="special-tag-for-editing-text-with-html"></span></a></div>
                         </div>
                     </div>
                 </div>
@@ -129,7 +56,7 @@
                 <div class="container bloc-sm">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="text-center"><a href="http://eldar.tech/templates/creativity" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">Creative Project 3<span class="special-tag-for-editing-text-with-html"></span></a></div>
+                            <div class="text-center"><a href="portfolio.php" class="btn  btn-d  btn-lg btn-sq creativity-folio" target="_blank">New Technologies<span class="special-tag-for-editing-text-with-html"></span></a></div>
                         </div>
                     </div>
                 </div>
@@ -148,7 +75,7 @@
                             <div class="col-sm-12">
                                 <h1 class="text-center mg-md tc-onyx fadeInUp animated">Check out our portfolio</h1>
                                 <h4 class="text-center text-w-50 mg-lg fadeInUp animDelay02 animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</h4>
-                                <div class="text-center"><a href="portfolio.html" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-black-button animated">View portfolio</a></div>
+                                <div class="text-center"><a href="portfolio.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-black-button animated">View portfolio</a></div>
                             </div>
                         </div>
                     </div>
@@ -165,7 +92,7 @@
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Contact us</h2>
                             <h4 class="text-center mg-lg text-w-80 tc-dark-jungle-green fadeInUp animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
-                            <div class="text-center"><a href="contact.html" class="btn  btn-d  btn-lg btn-sq fadeInUp creativity-wire-button animated">Contact us</a></div>
+                            <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp creativity-wire-button animated">Contact us</a></div>
                         </div>
                     </div>
                 </div>
@@ -176,9 +103,9 @@
                 <div class="container bloc-lg">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h2 class="mg-md text-center tc-onyx">Request a quote</h2>
+                            <h2 class="mg-md text-center tc-onyx">Sign In for Newsletter</h2>
                             <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay04 tc-dark-jungle-green animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
-                            <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Request</a></div>
+                            <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Sign In</a></div>
                         </div>
                     </div>
                 </div>
@@ -191,7 +118,7 @@
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Meet our team</h2>
                             <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay08 tc-dark-jungle-green animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
-                            <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Meet us</a></div>
+                            <div class="text-center"><a href="team.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Meet us</a></div>
                         </div>
                     </div>
                 </div>

@@ -70,24 +70,7 @@
                         <h5>Developer</h5>
                     </div>
                 </div>
-                <div class="row voffset">
-                    <div class="col-sm-3"><img src="img/Creativity%2011.jpeg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Jeremy Blocs</strong></p>
-                        <h5>Job Description</h5>
-                    </div>
-                    <div class="col-sm-3"><img src="img/Creativity%209.jpg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Alex Blocs</strong></p>
-                        <h5>Job Description</h5>
-                    </div>
-                    <div class="col-sm-3"><img src="img/Creativity%2011.jpeg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Roman Blocs</strong></p>
-                        <h5>Job Description</h5>
-                    </div>
-                    <div class="col-sm-3"><img src="img/Creativity%209.jpg" class="img-responsive mg-md center-block" />
-                        <p class=" mg-sm"><strong>Victor Blocs</strong></p>
-                        <h5>Developer</h5>
-                    </div>
-                </div>
+            
             </div>
         </div>
         <!-- bloc-24 END -->
@@ -102,7 +85,7 @@
                             <div class="col-sm-12">
                                 <h1 class="text-center mg-md tc-onyx fadeInUp animated">Check out our portfolio</h1>
                                 <h4 class="text-center text-w-50 mg-lg fadeInUp animDelay02 animated">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</h4>
-                                <div class="text-center"><a href="portfolio.html" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-black-button animated">View portfolio</a></div>
+                                <div class="text-center"><a href="portfolio.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-black-button animated">View portfolio</a></div>
                             </div>
                         </div>
                     </div>
@@ -119,7 +102,7 @@
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Contact us</h2>
                             <h4 class="text-center mg-lg text-w-80 tc-dark-jungle-green fadeInUp animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
-                            <div class="text-center"><a href="contact.html" class="btn  btn-d  btn-lg btn-sq fadeInUp creativity-wire-button animated">Contact us</a></div>
+                            <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp creativity-wire-button animated">Contact us</a></div>
                         </div>
                     </div>
                 </div>
@@ -130,9 +113,9 @@
                 <div class="container bloc-lg">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h2 class="mg-md text-center tc-onyx">Request a quote</h2>
+                            <h2 class="mg-md text-center tc-onyx">Singn In for Newsletter</h2>
                             <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay04 tc-dark-jungle-green animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
-                            <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Request</a></div>
+                            <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Sign In</a></div>
                         </div>
                     </div>
                 </div>
@@ -145,7 +128,7 @@
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Join our team</h2>
                             <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay08 tc-dark-jungle-green animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
-                            <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Join us</a></div>
+                            <div class="text-center"><a href="team.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Join us</a></div>
                         </div>
                     </div>
                 </div>

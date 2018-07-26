@@ -96,7 +96,7 @@
                     <div class="col-sm-12 col-lg-6 col-md-4">
                         <h1 class="text-center mg-md sm-shadow creativity-hero-heading">Unleash your Coding Skills</h1>
                         <h3 class="text-center mg-lg sm-shadow animDelay02 tc-white">Wake up right now and reach your potential</h3>
-                        <div class="text-center"><a href="portfolio.html" class="btn btn-lg btn-rd btn-d animDelay04 creativity-hero-button">View courses</a></div>
+                        <div class="text-center"><a href="portfolio.php" class="btn btn-lg btn-rd btn-d animDelay04 creativity-hero-button">View courses</a></div>
                     </div>
      
         <div class="col-sm-12 col-lg-6 col-md-4">
@@ -241,7 +241,7 @@
                             <div class="text-center"><span class="et-icon-gears icon-xl icon-white creativity-yellow"></span></div>
                             <h1 class="mg-md text-center  tc-white fadeInUp creativity-yellow animated">Unique approach</h1>
                             <p class="text-center mg-lg text-w-70  fadeInUp animated">Join the 45 million people who have trusted CIA to learn to code</p>
-                            <div class="text-center"><a href="about.html" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-yellow-button animated">It´s time to start investing in yourself</a></div>
+                            <div class="text-center"><a href="about.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-yellow-button animated">It´s time to start investing in yourself</a></div>
                         </div>
                     </div>
                 </div>
@@ -263,7 +263,7 @@
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Contact us</h2>
                             <h4 class="text-center mg-lg text-w-80 tc-dark-jungle-green fadeInUp animated">Get in contact with us. We would love to hear from you.</h4>
-                            <div class="text-center"><a href="contact.html" class="btn  btn-d  btn-lg btn-sq fadeInUp creativity-wire-button animated">Contact us</a></div>
+                            <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp creativity-wire-button animated">Contact us</a></div>
                         </div>
                     </div>
                 </div>
@@ -276,7 +276,7 @@
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Sign in for Newsletter</h2>
                             <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay04 tc-dark-jungle-green animated">We will inform you about our latest work and your opportunities within the world of coding.</h4>
-                            <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Request</a></div>
+                            <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Request</a></div>
                         </div>
                     </div>
                 </div>
@@ -289,7 +289,7 @@
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Meet our team</h2>
                             <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay08 tc-dark-jungle-green animated">We wanna know more about you. So it is only fair to introduce ourselfs to you.</h4>
-                            <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Meet us</a></div>
+                            <div class="text-center"><a href="team.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Meet us</a></div>
                         </div>
                     </div>
                 </div>

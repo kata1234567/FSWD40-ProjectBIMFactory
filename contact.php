@@ -120,7 +120,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            <iframe style="pointer-events:none; border:0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4748.448642447051!2d-2.1998756692274792!3d53.4823216106635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x549a8dcce67a876a!2sEtihad+Stadium!5e0!3m2!1sen!2sus!4v1471269067453"
+                            <iframe style="pointer-events:none; border:0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.5847278226092!2d16.358317615762015!3d48.19535217922817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07868cf3cfb5%3A0x3c6daa2cfecbc65c!2sKettenbr%C3%BCckengasse%2C+Wien!5e0!3m2!1sen!2sat!4v1532590321232" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>"
                                 width="100%" height="600" frameborder="0" allowfullscreen=""></iframe>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Sign In for Newsletter</h2>
                             <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay04 tc-dark-jungle-green animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
-                            <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Sign In now</a></div>
+                            <div class="text-center"><a href="contact.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay04 creativity-wire-button animated" target="_blank">Sign In now</a></div>
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                         <div class="col-sm-12">
                             <h2 class="mg-md text-center tc-onyx">Meet our team</h2>
                             <h4 class="text-center mg-lg text-w-80 fadeInUp animDelay08 tc-dark-jungle-green animated">Lorem ipsum sit amet, consectetuer elit. Commodo ligula eget dolor.</h4>
-                            <div class="text-center"><a href="http://blocstemplates.com" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Meet us</a></div>
+                            <div class="text-center"><a href="team.php" class="btn  btn-d  btn-lg btn-sq fadeInUp animDelay08 creativity-wire-button animated">Meet us</a></div>
                         </div>
                     </div>
                 </div>
